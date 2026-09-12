@@ -1,0 +1,10 @@
+127.0.0.1 - - [27/Aug/2026:08:36:28 +0900] "GET / HTTP/1.1" 200 7620 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0" "-"
+127.0.0.1 - - [27/Aug/2026:08:36:28 +0900] "GET /icons/poweredby.png HTTP/1.1" 200 15443 "http://localhost/" "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0" "-"
+127.0.0.1 - - [27/Aug/2026:08:36:28 +0900] "GET /poweredby.png HTTP/1.1" 200 368 "http://localhost/" "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0" "-"
+127.0.0.1 - - [27/Aug/2026:08:36:28 +0900] "GET /favicon.ico HTTP/1.1" 404 153 "http://localhost/" "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0" "-"
+192.168.120.130 - - [27/Aug/2026:08:36:48 +0900] "GET / HTTP/1.1" 200 7620 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0" "-"
+192.168.120.130 - - [27/Aug/2026:08:36:48 +0900] "GET /icons/poweredby.png HTTP/1.1" 200 15443 "http://192.168.120.130/" "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0" "-"
+192.168.120.130 - - [27/Aug/2026:08:36:48 +0900] "GET /poweredby.png HTTP/1.1" 200 368 "http://192.168.120.130/" "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0" "-"
+192.168.120.130 - - [27/Aug/2026:08:36:48 +0900] "GET /favicon.ico HTTP/1.1" 404 153 "http://192.168.120.130/" "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0" "-"
+::1 - - [27/Aug/2026:08:37:22 +0900] "GET / HTTP/1.1" 200 7620 "-" "curl/8.12.1" "-"
+
