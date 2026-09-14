@@ -16,5 +16,6 @@
 | 2026-09-10 | [오전 실습](2026-09-10/오전%20실습.md) | SSH 오타 해결, Apache·SELinux·82번 포트, IP·PAT·서브네팅·슈퍼네팅, 추가 IP 통신 |
 | 2026-09-10 | [오후 실습](2026-09-10/오후%20실습.md) | IP 변경 별도 표시, NetworkManager·Netplan, Windows–Rocky–Ubuntu 라우팅, SSH 220·공개키, 트러블슈팅 모음 |
 | 2026-09-11 | [실습 및 네트워크 정리](2026-09-11/실습%20및%20네트워크%20정리.md) | SCP·SFTP, SSH 오류, NFS·방화벽·마운트, IPv6, Podman, OSI·PDU·이더넷, RIP, VPC Peering |
+| 2026-09-14 | [실습](2026-09-14/실습.md) · [패킷 분석](2026-09-14/패킷%20분석.md) | DNS·Unbound·SELinux, Nmap·RPC·nc·lsof, NAT·TTL, Wireshark 분석·IPv4/IPv6·HTTP·TCP handshake·MSS |
 
 기존 셸 스크립트와 예제 데이터는 저장소 루트에 유지한다. 강의노트의 전체 Word 원본은 업로드하지 않고 날짜별 정리본을 제공한다.
