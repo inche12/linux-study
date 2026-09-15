@@ -12,6 +12,7 @@
 | 2026-08-27 | [실습](2026-08-27/실습.md) | Nginx 컨테이너·확장 glob·sed |
 | 2026-08-28 | [실습](2026-08-28/실습.md) | awk 로그 분석·Ubuntu·umask·Docker 그룹 |
 | 2026-09-07 | [실습](2026-09-07/실습.md) | sudo·PAM·systemd·NTP·스케줄링·디스크 |
+| 2026-09-08 | [실습](2026-09-08/실습.md) | LVM Snapshot·tar 경로 오류·watch·RAID1·Swap·fstab 오타·GitHub SSH 443 |
 | 2026-09-09 | [기존 실습 노트](notes/2026-09-09-linux-practice.md) | 부팅 설정·백업·복원·원격 복사·로그·방화벽 조회 |
 | 2026-09-10 | [오전 실습](2026-09-10/오전%20실습.md) | SSH 오타 해결, Apache·SELinux·82번 포트, IP·PAT·서브네팅·슈퍼네팅, 추가 IP 통신 |
 | 2026-09-10 | [오후 실습](2026-09-10/오후%20실습.md) | IP 변경 별도 표시, NetworkManager·Netplan, Windows–Rocky–Ubuntu 라우팅, SSH 220·공개키, 트러블슈팅 모음 |
