@@ -14,9 +14,9 @@
 | master1 종료 후 워커 복제 준비 | 강의 절차에 따라 진행 |
 | w1 고정 IP `.151` 및 Xshell 접속 | 사용자 확인 |
 | 시간대 설정, 예비 Clone | 강의 다음 절차이며 완료 결과 미제시 |
-| 실제 master1 초기화와 kubectl 사용자 설정 | 미확인 |
-| Calico 설치 | 미확인 |
-| w1 Join 및 두 노드 Ready | 미확인 |
+| 실제 master1 구성과 kubectl 조회 | root 셸에서 컨트롤 플레인 및 노드 조회 확인; student 설정 결과는 별도 미확인 |
+| Calico 설치 | master1의 Calico Pod Running 및 READY 충족 확인 |
+| w1 Join 및 두 노드 Ready | 가입 성공 메시지와 master1·w1 Ready 확인 (v1.36.4) |
 
 ## 2 공통 노드 준비 항목
 
@@ -96,9 +96,9 @@ hostname
 ip -br a
 ```
 
-## 4 실제 클러스터 구성 예정
+## 4 실제 클러스터 구성과 확인 결과
 
-이 절은 다음 수업용이며 오늘 완료한 결과가 아니다.
+저녁 실습에서 Calico 구동, w1 가입, 두 노드 Ready까지 확인했다. 아래는 복습 절차이며 이미 완료한 init과 join을 다시 실행하지 않는다. 상세 실행 기록과 오류 해결은 [실습 정리](실습.md#이어서-진행한-실습-master1과-w1-모두-ready)를 참고한다.
 
 ### master1 초기화
 
@@ -154,7 +154,17 @@ kubectl get nodes -o wide
 kubectl get pods -A -o wide
 ```
 
-목표는 `master1`, `w1` 모두 Ready, 네트워크 구성 요소와 CoreDNS의 정상 동작이다. 워커 VM을 만들고 SSH에 접속한 것만으로 클러스터 가입이 완료되는 것은 아니다.
+최종 노드 조회에서 다음 결과를 확인했다.
+
+```text
+NAME      STATUS   ROLES           AGE     VERSION
+master1   Ready    control-plane   46m     v1.36.4
+w1        Ready    <none>          2m21s   v1.36.4
+```
+
+워커 가입 전 master1의 네트워크 구성 요소와 CoreDNS는 Running이었다. 가입 직후 w1의 Calico·CSI Pod는 초기화/생성 중이었으며 이후 두 노드 Ready를 확인했다. 최종 전체 Pod 목록은 별도로 확인하지 않았다. w1의 `<none>`은 역할 라벨이 없는 상태이며 오류가 아니다.
+
+마스터에서 join을 실행하면 기존 kubelet.conf·ca.crt 및 10250 포트 충돌이 발생한다. reset으로 해결하지 말고 `hostname`과 `hostname -I`로 워커(`w1`, `192.168.120.151`)인지 확인한 뒤 워커에서 실행한다. 프롬프트 문자열은 복사하지 않는다. 이미 가입에 성공한 w1은 토큰 재발급이나 join 재실행이 필요 없다.
 
 ## 5 reset을 사용할 때
 
