@@ -8,6 +8,11 @@
 - [Docker: 기존 이미지 확인과 Docker Hub 업로드](Docker/실습.md)
 - [Kubernetes: 구축 확인부터 Deployment까지](Kubernetes/실습.md)
 
+9월 21일 후속 학습은 위 Kubernetes 문서에 병합했다. Service·kube-proxy, nodeSelector,
+Rolling/Blue-Green/Canary, Metrics Server 오류, Dashboard·ServiceAccount·RBAC를 추가했다.
+[AWS 기초 학습](../2026-09-21/AWS/실습.md)은 별도 문서로 연결한다.
+아래 완료 체크와 환경·인계 정보는 **9월 18일 당시 상태**다. 9월 21일의 기록/검증 범위는 통합 노트를 참고한다.
+
 ## 완료 체크
 
 - [x] master1, w1 Ready 확인

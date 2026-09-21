@@ -19,8 +19,11 @@
 | 2026-09-11 | [실습 및 네트워크 정리](2026-09-11/실습%20및%20네트워크%20정리.md) | SCP·SFTP, SSH 오류, NFS·방화벽·마운트, IPv6, Podman, OSI·PDU·이더넷, RIP, VPC Peering |
 | 2026-09-14 | [실습](2026-09-14/실습.md) · [패킷 분석](2026-09-14/패킷%20분석.md) | DNS·Unbound·SELinux, Nmap·RPC·nc·lsof, NAT·TTL, Wireshark 분석·IPv4/IPv6·HTTP·TCP handshake·MSS |
 | 2026-09-15 | [실습](2026-09-15/실습.md) | Docker 구조·권한·원격 API, 이미지·컨테이너·프로세스, Dockerfile·Nginx 웹 배포, Docker Hub·포트 충돌 해결 |
-
 | 2026-09-16 | [Docker 종합 정리](2026-09-16/9월16일-Docker-종합정리.md) | Dockerfile·이미지·볼륨·Nginx·사설 레지스트리 |
 | 2026-09-17 | [실습 정리](2026-09-17/실습.md) · [Kubernetes 구축 로드맵](2026-09-17/Kubernetes-구축-로드맵.md) | 멀티 플랫폼 이미지·Docker 네트워크·Compose·WordPress·MySQL·Kubernetes 구조·고정 IP·kubeadm 검증과 reset·워커 준비 |
+| 2026-09-18 | [분야별 목차](2026-09-18/README.md) · [Kubernetes](2026-09-18/Kubernetes/실습.md) | Docker Hub 업로드·kubeconfig·Pod·YAML·Deployment·삭제 복구 |
+| 2026-09-21 | [Kubernetes 통합 노트](2026-09-18/Kubernetes/실습.md) · [AWS 기초](2026-09-21/AWS/실습.md) | Service·kube-proxy·label/nodeSelector·배포 전략·Metrics Server 오류·Dashboard·SA/RBAC·AWS 서비스 모델·Region/AZ·IAM |
+
+9월 21일 Kubernetes 내용은 기존 9월 18일 문서의 관련 항목에 병합했다. 날짜별 중복 문서를 만들지 않고 기존 실행 기록과 추가 확인 절차를 구분한다.
 
 기존 셸 스크립트와 예제 데이터는 저장소 루트에 유지한다. 강의노트의 전체 Word 원본은 업로드하지 않고 날짜별 정리본을 제공한다.
