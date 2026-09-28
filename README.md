@@ -40,6 +40,7 @@
 | 2026-09-21 | [Kubernetes 통합 노트](2026-09-18/Kubernetes/실습.md) · [AWS 기초](2026-09-21/AWS/실습.md) | Service·kube-proxy·label/nodeSelector·배포 전략·Metrics Server 오류·Dashboard·SA/RBAC·AWS 서비스 모델·Region/AZ·IAM |
 | 2026-09-22 | [AWS 실습](2026-09-22/AWS/실습.md) | IAM·Role/STS·Cross Account·S3 권한·EC2·VPC 및 집 Wi-Fi/핫스팟 SSH 장애 |
 | 2026-09-23 | [AWS 실습](2026-09-23/AWS/실습.md) | S3 공개 접근·Presigned URL·CLI·백업·정적 웹사이트·403/fetch 오류·VPC 설계·비용 점검 |
+| 2026-09-28 | [AWS 실습](2026-09-28/AWS/실습.md) | VPC·Bastion·Private EC2·NAT·ProxyCommand·리전 간/짝꿍 Peering·EFS·트러블슈팅·삭제 점검 |
 
 9월 21일 Kubernetes 내용은 기존 9월 18일 문서의 관련 항목에 병합했다. 날짜별 중복 문서를 만들지 않고 기존 실행 기록과 추가 확인 절차를 구분한다.
 
