@@ -41,6 +41,7 @@
 | 2026-09-22 | [AWS 실습](2026-09-22/AWS/실습.md) | IAM·Role/STS·Cross Account·S3 권한·EC2·VPC 및 집 Wi-Fi/핫스팟 SSH 장애 |
 | 2026-09-23 | [AWS 실습](2026-09-23/AWS/실습.md) | S3 공개 접근·Presigned URL·CLI·백업·정적 웹사이트·403/fetch 오류·VPC 설계·비용 점검 |
 | 2026-09-28 | [AWS 실습](2026-09-28/AWS/실습.md) | VPC·Bastion·Private EC2·NAT·ProxyCommand·리전 간/짝꿍 Peering·EFS·트러블슈팅·삭제 점검 |
+| 2026-09-29 | [AWS 실습](2026-09-29/AWS/실습.md) | Public Subnet·EC2 User Data·Apache/PHP·특수 대시 오류·ALB/Target Group·Auto Scaling 사전 학습·비용 확인 |
 
 9월 21일 Kubernetes 내용은 기존 9월 18일 문서의 관련 항목에 병합했다. 날짜별 중복 문서를 만들지 않고 기존 실행 기록과 추가 확인 절차를 구분한다.
 

@@ -34,6 +34,12 @@
 | EFS 생성·TLS 마운트·파일 공유 | [9/28 EFS](../2026-09-28/AWS/실습.md#09) · [짝꿍 공유](../2026-09-28/AWS/실습.md#10) | Mount Target·TCP 2049·파일 읽기/쓰기 |
 | SSH·EFS·경로 오류 해결 | [9/28 트러블슈팅](../2026-09-28/AWS/실습.md#11) | DNS·known_hosts·config.txt·잘못된 대상 및 경로 |
 | SG·NACL·실습 종료 | [9/28 보안 규칙](../2026-09-28/AWS/실습.md#12) · [비용](../2026-09-28/AWS/실습.md#13) · [삭제 체크리스트](../2026-09-28/AWS/실습.md#16) | Stateful/Stateless·정리 보고와 재점검 |
+| Public Subnet·웹 서버 EC2 | [9/29 네트워크 구성](../2026-09-29/AWS/실습.md#3-기존-vpc--subnet--route-table-구조) · [EC2 생성](../2026-09-29/AWS/실습.md#5-ec2-webserver-1-생성) | Public RT 연결·공인 IP·HTTP 접근 조건 |
+| User Data·Apache/PHP 자동 구성 | [9/29 User Data](../2026-09-29/AWS/실습.md#7-고급-세부-정보---user-data) · [명령 해석](../2026-09-29/AWS/실습.md#8-user-data-명령어-상세-해석) | 패키지 설치·웹 앱 배치·SDK |
+| httpd 시작 실패·Cloud-init 로그 | [9/29 오류 해결](../2026-09-29/AWS/실습.md#9-웹-접속-실패-트러블슈팅) · [로그 확인](../2026-09-29/AWS/실습.md#10-cloud-init-로그-및-웹-파일-확인) | 특수 대시·inactive·enable --now·웹페이지 정상 출력 |
+| ALB·Target Group·Health Check | [9/29 ALB 복습](../2026-09-29/AWS/실습.md#4-기존-alb-실습-구조-복습) | HTTP Listener·Healthy Target·EC2 두 대 |
+| Launch Template·Auto Scaling 사전 학습 | [9/29 개념](../2026-09-29/AWS/실습.md#13-auto-scaling-사전-학습) · [실제 확인 범위](../2026-09-29/AWS/실습.md#14-asg-화면에서-실제-확인한-내용) | Min/Desired/Max·ASG는 아직 미생성 |
+| 리소스 정리·Billing 확인 | [9/29 종료 점검](../2026-09-29/AWS/실습.md#16-실습-종료-후-비용-절감-포인트) · [비용 화면](../2026-09-29/AWS/실습.md#17-billing-화면에서-비용-확인) | EC2·ALB·NAT·EBS·예상 비용과 결제 구분 |
 
 ## 기록을 읽을 때
 
@@ -42,6 +48,8 @@
 - 집 SSH 연결 실패의 정확한 차단 위치는 아직 확정되지 않았다.
 - 9/23의 본인 ELB/API 연결 성공, 최종 VPC 상태, NAT 생성 여부와 EC2 중지 완료는 해당 원문에서 추가 확인 대상으로 구분한다.
 - 9/28은 별도 example-vpc 실습이다. Private SSH·짝꿍 ping·본인 EFS 쓰기는 성공 기록이 있고, 오리건 사설 ping과 상대 EFS 공유 결과는 미확인이다. 삭제 완료는 사용자 보고이며 개별 잔여 리소스는 재점검 대상이다.
+
+- 9/29는 User Data 웹 서버 동작과 기존 ALB 구성을 확인한 기록이다. Auto Scaling은 사전 학습이며 실제 ASG 생성 완료로 기록하지 않는다.
 
 ## 다음 기록 추가 방법
 
