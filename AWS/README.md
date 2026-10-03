@@ -40,6 +40,13 @@
 | ALB·Target Group·Health Check | [9/29 ALB 복습](../2026-09-29/AWS/실습.md#4-기존-alb-실습-구조-복습) | HTTP Listener·Healthy Target·EC2 두 대 |
 | Launch Template·Auto Scaling 사전 학습 | [9/29 개념](../2026-09-29/AWS/실습.md#13-auto-scaling-사전-학습) · [실제 확인 범위](../2026-09-29/AWS/실습.md#14-asg-화면에서-실제-확인한-내용) | Min/Desired/Max·ASG는 아직 미생성 |
 | 리소스 정리·Billing 확인 | [9/29 종료 점검](../2026-09-29/AWS/실습.md#16-실습-종료-후-비용-절감-포인트) · [비용 화면](../2026-09-29/AWS/실습.md#17-billing-화면에서-비용-확인) | EC2·ALB·NAT·EBS·예상 비용과 결제 구분 |
+| DynamoDB·Query/Scan·읽기 일관성 | [10/2 DynamoDB](../2026-10-02/AWS/실습.md#section-2) | Item·키·Capacity Mode |
+| Serverless·이벤트 처리·SAM | [10/2 서버리스](../2026-10-02/AWS/실습.md#section-3) · [SAM](../2026-10-02/AWS/실습.md#section-4) | API Gateway·Lambda·EventBridge·SQS·DLQ 개념 |
+| CAF·마이그레이션·데이터 전송 | [10/2 CAF](../2026-10-02/AWS/실습.md#section-5) · [전략](../2026-10-02/AWS/실습.md#section-6) · [전송 서비스](../2026-10-02/AWS/실습.md#section-7) | 6R 학습·Storage Gateway·DataSync·Transfer Family |
+| CloudFront·OAI/OAC·Signed URL | [10/2 CDN](../2026-10-02/AWS/실습.md#section-8) · [보안 개념](../2026-10-02/AWS/실습.md#section-9) | Origin·Edge·TTL·접근 제어 |
+| Docker 3-Tier·ALB 3000 포트 연동 | [10/2 컨테이너 확인](../2026-10-02/AWS/실습.md#section-10) · [504 해결](../2026-10-02/AWS/실습.md#section-15) | MySQL·Backend 재시작·/api Health Check·SG |
+| S3 Frontend·CloudFront 두 배포 | [10/2 S3 이전](../2026-10-02/AWS/실습.md#section-17) · [Frontend CDN](../2026-10-02/AWS/실습.md#section-20) · [Backend CDN](../2026-10-02/AWS/실습.md#section-23) | 정적 파일·HTTPS API·Origin Path |
+| 캐시 무효화·최종 DB 조회·정리 | [10/2 Invalidation](../2026-10-02/AWS/실습.md#section-27) · [최종 결과](../2026-10-02/AWS/실습.md#section-28) · [오류 복습](../2026-10-02/AWS/실습.md#section-30) · [종료 점검](../2026-10-02/AWS/실습.md#section-31) | HTML 갱신·Mixed Content·리소스 정리 절차 |
 
 ## 기록을 읽을 때
 
@@ -50,6 +57,8 @@
 - 9/28은 별도 example-vpc 실습이다. Private SSH·짝꿍 ping·본인 EFS 쓰기는 성공 기록이 있고, 오리건 사설 ping과 상대 EFS 공유 결과는 미확인이다. 삭제 완료는 사용자 보고이며 개별 잔여 리소스는 재점검 대상이다.
 
 - 9/29는 User Data 웹 서버 동작과 기존 ALB 구성을 확인한 기록이다. Auto Scaling은 사전 학습이며 실제 ASG 생성 완료로 기록하지 않는다.
+
+- 10/2는 첨부 기록 기준으로 CloudFront 프론트엔드에서 DB 데이터 표시까지 확인했다. 서버리스·마이그레이션 개념 학습과 실제 3-Tier 연동을 구분하며, 리소스 정리 절차를 삭제 완료 증거로 보지 않는다.
 
 ## 다음 기록 추가 방법
 

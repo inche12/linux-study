@@ -42,6 +42,7 @@
 | 2026-09-23 | [AWS 실습](2026-09-23/AWS/실습.md) | S3 공개 접근·Presigned URL·CLI·백업·정적 웹사이트·403/fetch 오류·VPC 설계·비용 점검 |
 | 2026-09-28 | [AWS 실습](2026-09-28/AWS/실습.md) | VPC·Bastion·Private EC2·NAT·ProxyCommand·리전 간/짝꿍 Peering·EFS·트러블슈팅·삭제 점검 |
 | 2026-09-29 | [AWS 실습](2026-09-29/AWS/실습.md) | Public Subnet·EC2 User Data·Apache/PHP·특수 대시 오류·ALB/Target Group·Auto Scaling 사전 학습·비용 확인 |
+| 2026-10-02 | [AWS 실습](2026-10-02/AWS/실습.md) | DynamoDB·Serverless·SAM·마이그레이션·CloudFront·S3 Frontend·ALB·Docker 3-Tier 연동·504 오류 해결 |
 
 9월 21일 Kubernetes 내용은 기존 9월 18일 문서의 관련 항목에 병합했다. 날짜별 중복 문서를 만들지 않고 기존 실행 기록과 추가 확인 절차를 구분한다.
 
