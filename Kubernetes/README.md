@@ -24,6 +24,14 @@
 | Dashboard·ServiceAccount·RBAC | [통합 노트](../2026-09-18/Kubernetes/실습.md) | 15절: 인증·권한·실습 설정 복구 |
 | API Server 보안 흐름·복습 | [통합 노트](../2026-09-18/Kubernetes/실습.md) | 16~18절 |
 
+| Helm 기초·설치·Repository | [10/6 Helm](../2026-10-06/Kubernetes/실습.md#section-1) · [설치](../2026-10-06/Kubernetes/실습.md#section-2) · [Repository](../2026-10-06/Kubernetes/실습.md#section-3) | Chart·Release·자동완성·Bitnami |
+| Chart 생성·이미지·NodePort 배포 | [10/6 Chart](../2026-10-06/Kubernetes/실습.md#section-6) · [웹 배포](../2026-10-06/Kubernetes/실습.md#section-7) | values.yaml·Docker Hub 이미지·브라우저 출력 |
+| Template·Upgrade·Rollback | [10/6 렌더링](../2026-10-06/Kubernetes/실습.md#section-8) · [Upgrade](../2026-10-06/Kubernetes/실습.md#section-10) · [Rollback](../2026-10-06/Kubernetes/실습.md#section-11) | kubectl 직접 관리와 Release 관리·Replica·Revision |
+| MariaDB·PVC Pending·DB 접속 | [10/6 Pending](../2026-10-06/Kubernetes/실습.md#section-5) · [임시 저장 전환](../2026-10-06/Kubernetes/실습.md#section-12) · [Client 접속](../2026-10-06/Kubernetes/실습.md#section-14) | unbound PVC·비밀번호 오류·Running·SQL 확인 |
+| 사용자 values·StatefulSet Scale | [10/6 설정 분리](../2026-10-06/Kubernetes/실습.md#section-15) · [Scale](../2026-10-06/Kubernetes/실습.md#section-16) · [Deployment 비교](../2026-10-06/Kubernetes/실습.md#section-17) | -f 옵션·Pod 순차 생성·고유 신원 |
+| Volume·emptyDir·hostPath·PVC/PV | [10/6 Volume](../2026-10-06/Kubernetes/실습.md#section-18) · [hostPath](../2026-10-06/Kubernetes/실습.md#section-19) | 데이터 수명·노드 종속·영구 저장 개념 |
+| Helm 오류·명령어 복습 | [10/6 트러블슈팅](../2026-10-06/Kubernetes/실습.md#section-20) · [명령 모음](../2026-10-06/Kubernetes/실습.md#section-22) | Pending·Release 부재·Upgrade Password 오류 |
+
 ## 재사용 YAML
 
 - [Deployment 예제](../2026-09-18/Kubernetes/examples/deployment-example.yaml)
