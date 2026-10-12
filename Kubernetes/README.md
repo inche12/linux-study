@@ -23,7 +23,6 @@
 | Metrics Server·CrashLoopBackOff | [통합 노트](../2026-09-18/Kubernetes/실습.md) | 14절: args 오류와 수정 |
 | Dashboard·ServiceAccount·RBAC | [통합 노트](../2026-09-18/Kubernetes/실습.md) | 15절: 인증·권한·실습 설정 복구 |
 | API Server 보안 흐름·복습 | [통합 노트](../2026-09-18/Kubernetes/실습.md) | 16~18절 |
-
 | Helm 기초·설치·Repository | [10/6 Helm](../2026-10-06/Kubernetes/실습.md#section-1) · [설치](../2026-10-06/Kubernetes/실습.md#section-2) · [Repository](../2026-10-06/Kubernetes/실습.md#section-3) | Chart·Release·자동완성·Bitnami |
 | Chart 생성·이미지·NodePort 배포 | [10/6 Chart](../2026-10-06/Kubernetes/실습.md#section-6) · [웹 배포](../2026-10-06/Kubernetes/실습.md#section-7) | values.yaml·Docker Hub 이미지·브라우저 출력 |
 | Template·Upgrade·Rollback | [10/6 렌더링](../2026-10-06/Kubernetes/실습.md#section-8) · [Upgrade](../2026-10-06/Kubernetes/실습.md#section-10) · [Rollback](../2026-10-06/Kubernetes/실습.md#section-11) | kubectl 직접 관리와 Release 관리·Replica·Revision |
@@ -31,6 +30,10 @@
 | 사용자 values·StatefulSet Scale | [10/6 설정 분리](../2026-10-06/Kubernetes/실습.md#section-15) · [Scale](../2026-10-06/Kubernetes/실습.md#section-16) · [Deployment 비교](../2026-10-06/Kubernetes/실습.md#section-17) | -f 옵션·Pod 순차 생성·고유 신원 |
 | Volume·emptyDir·hostPath·PVC/PV | [10/6 Volume](../2026-10-06/Kubernetes/실습.md#section-18) · [hostPath](../2026-10-06/Kubernetes/실습.md#section-19) | 데이터 수명·노드 종속·영구 저장 개념 |
 | Helm 오류·명령어 복습 | [10/6 트러블슈팅](../2026-10-06/Kubernetes/실습.md#section-20) · [명령 모음](../2026-10-06/Kubernetes/실습.md#section-22) | Pending·Release 부재·Upgrade Password 오류 |
+| NFS 서버·export·클라이언트 준비 | [10/7 NFS 서버](../2026-10-07/Kubernetes/실습.md#section-4) · [Worker 클라이언트](../2026-10-07/Kubernetes/실습.md#section-5) | /share export 확인·Ubuntu/Rocky 명령·마운트는 미확인 |
+| Worker 복제·IP 충돌·재가입 준비 | [10/7 VM 복제](../2026-10-07/Kubernetes/실습.md#section-6) | w1/w2 주소 중복·hostname·노드 식별정보·가입 절차 |
+| nginx Pod·기존 Blue/Green 리소스 | [10/7 Pod 실습](../2026-10-07/Kubernetes/실습.md#section-7) · [오류 정리](../2026-10-07/Kubernetes/실습.md#section-8) | Pod 생성·셸 접속·Deployment/Service 조회·삭제 완료 미확인 |
+| NFS 공유 후속 검증 | [10/7 체크리스트](../2026-10-07/Kubernetes/실습.md#section-9) | w2 Ready·마운트·서로 다른 Worker의 Pod 파일 공유 확인 예정 |
 
 ## 재사용 YAML
 
@@ -40,6 +43,8 @@
 예제는 기존 위치의 파일을 연결한다. 실제 적용 전 현재 리소스·이미지·네임스페이스와 문서의 전제 조건을 확인한다.
 
 ## 오류와 확인 범위
+
+- 10/7은 NFS export 및 nginx Pod 실행을 확인한 기록이다. w2 가입·NFS 마운트·PV/PVC 공유·기존 리소스 삭제 완료는 미확인이다.
 
 - kubeconfig 미설정, 이미지 pull, YAML 필드 오류: 통합 노트 1·5·8절
 - Metrics Server 인자 결합 오류: 통합 노트 14절
