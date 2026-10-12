@@ -34,6 +34,11 @@
 | Worker 복제·IP 충돌·재가입 준비 | [10/7 VM 복제](../2026-10-07/Kubernetes/실습.md#section-6) | w1/w2 주소 중복·hostname·노드 식별정보·가입 절차 |
 | nginx Pod·기존 Blue/Green 리소스 | [10/7 Pod 실습](../2026-10-07/Kubernetes/실습.md#section-7) · [오류 정리](../2026-10-07/Kubernetes/실습.md#section-8) | Pod 생성·셸 접속·Deployment/Service 조회·삭제 완료 미확인 |
 | NFS 공유 후속 검증 | [10/7 체크리스트](../2026-10-07/Kubernetes/실습.md#section-9) | w2 Ready·마운트·서로 다른 Worker의 Pod 파일 공유 확인 예정 |
+| ConfigMap·Nginx 설정·Secret | [10/8 ConfigMap](../2026-10-08/Kubernetes/실습.md#section-1) · [Secret/PVC](../2026-10-08/Kubernetes/실습.md#section-2) | 8000 포트 응답 확인·설정 마운트·MariaDB Pending 점검 |
+| HA·Service Mesh·Istio 설치 | [10/8 개념](../2026-10-08/Kubernetes/실습.md#section-3) · [Istio/Bookinfo](../2026-10-08/Kubernetes/실습.md#section-4) | etcd quorum·Envoy·istiod·Sidecar Injection |
+| Bookinfo·NodePort·Gateway·연결 오류 | [10/8 접속](../2026-10-08/Kubernetes/실습.md#section-5) · [Port Forwarding](../2026-10-08/Kubernetes/실습.md#section-6) | Pod 자가 복구·직접 접속 성공·Gateway 리소스·연결 거부 |
+| Kiali·Reviews 가중치 라우팅 | [10/8 Kiali](../2026-10-08/Kubernetes/실습.md#section-7) | 트래픽 그래프 확인·7:70:23 설정 미리보기·적용 미확인 |
+| Grafana·Prometheus·Exporter | [10/8 모니터링](../2026-10-08/Kubernetes/실습.md#section-8) · [점검표](../2026-10-08/Kubernetes/실습.md#section-9) | Dashboard 1860·Node Exporter·kube-state-metrics·수집 검증 |
 
 ## 재사용 YAML
 
@@ -43,6 +48,8 @@
 예제는 기존 위치의 파일을 연결한다. 실제 적용 전 현재 리소스·이미지·네임스페이스와 문서의 전제 조건을 확인한다.
 
 ## 오류와 확인 범위
+
+- 10/8의 Bookinfo 접속 성공은 productpage NodePort 기준이다. Gateway 경유 접속·가중치 적용·신규 Exporter 수집은 별도 검증 대상이며, Calico 경고와 Loki Pending도 해결 완료로 기록하지 않는다.
 
 - 10/7은 NFS export 및 nginx Pod 실행을 확인한 기록이다. w2 가입·NFS 마운트·PV/PVC 공유·기존 리소스 삭제 완료는 미확인이다.
 

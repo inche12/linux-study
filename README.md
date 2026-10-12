@@ -46,6 +46,7 @@
 | 2026-10-02 | [AWS 실습](2026-10-02/AWS/실습.md) | DynamoDB·Serverless·SAM·마이그레이션·CloudFront·S3 Frontend·ALB·Docker 3-Tier 연동·504 오류 해결 |
 | 2026-10-06 | [Kubernetes 실습](2026-10-06/Kubernetes/실습.md) | Helm·Chart·values·Upgrade/Rollback·MariaDB Pending·StatefulSet·Volume·hostPath |
 | 2026-10-07 | [Kubernetes NFS 실습](2026-10-07/Kubernetes/실습.md) | NFS export·Worker VM 복제·IP 중복·w2 가입 준비·nginx Pod·기존 리소스 조회 및 정리 절차 |
+| 2026-10-08 | [Kubernetes Istio·모니터링 실습](2026-10-08/Kubernetes/실습.md) | ConfigMap·Secret·MariaDB/PVC·HA·Istio·Bookinfo·Gateway·Kiali·Grafana·Exporter |
 
 9월 21일 Kubernetes 내용은 기존 9월 18일 문서의 관련 항목에 병합했다. 날짜별 중복 문서를 만들지 않고 기존 실행 기록과 추가 확인 절차를 구분한다.
 
