@@ -2,10 +2,10 @@
 
 ## 분야별 공부 바로가기
 
-| 네트워크 | Docker | Kubernetes | AWS |
-|---|---|---|---|
-| [네트워크 목차](Network/README.md) | [Docker 목차](Docker/README.md) | [Kubernetes 목차](Kubernetes/README.md) | [AWS 목차](AWS/README.md) |
-| IP·DNS·라우팅·SSH·패킷 분석 | 이미지·Dockerfile·Volume·Compose | 구축·Pod·Service·배포·RBAC | IAM·EC2·S3·VPC·연결 오류 |
+| 네트워크 | Docker | Kubernetes | AWS | Terraform |
+|---|---|---|---|---|
+| [네트워크 목차](Network/README.md) | [Docker 목차](Docker/README.md) | [Kubernetes 목차](Kubernetes/README.md) | [AWS 목차](AWS/README.md) | [Terraform 목차](Terraform/README.md) |
+| IP·DNS·라우팅·SSH·패킷 분석 | 이미지·Dockerfile·Volume·Compose | 구축·Pod·Service·배포·RBAC | IAM·EC2·S3·VPC·연결 오류 | IaC·Provider·Local File·State |
 
 **날짜별 기록은 실습 원본**, **분야별 폴더는 주제별 학습 목차**다. 분야별 목차에서 관련 날짜의 문서와 예제로 이동한다.
 여러 분야가 섞인 실습은 각 목차에서 같은 원본의 관련 절을 안내한다.
@@ -47,6 +47,7 @@
 | 2026-10-06 | [Kubernetes 실습](2026-10-06/Kubernetes/실습.md) | Helm·Chart·values·Upgrade/Rollback·MariaDB Pending·StatefulSet·Volume·hostPath |
 | 2026-10-07 | [Kubernetes NFS 실습](2026-10-07/Kubernetes/실습.md) | NFS export·Worker VM 복제·IP 중복·w2 가입 준비·nginx Pod·기존 리소스 조회 및 정리 절차 |
 | 2026-10-08 | [Kubernetes Istio·모니터링 실습](2026-10-08/Kubernetes/실습.md) | ConfigMap·Secret·MariaDB/PVC·HA·Istio·Bookinfo·Gateway·Kiali·Grafana·Exporter |
+| 2026-10-12 | [전체 실습](2026-10-12/실습.md) · [Terraform 목차](Terraform/README.md) | MetalLB·Istio 외부 접속·Prometheus/Grafana·IaC·Windows Terraform·Local Provider 생성/삭제 |
 
 9월 21일 Kubernetes 내용은 기존 9월 18일 문서의 관련 항목에 병합했다. 날짜별 중복 문서를 만들지 않고 기존 실행 기록과 추가 확인 절차를 구분한다.
 

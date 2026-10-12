@@ -39,6 +39,9 @@
 | Bookinfo·NodePort·Gateway·연결 오류 | [10/8 접속](../2026-10-08/Kubernetes/실습.md#section-5) · [Port Forwarding](../2026-10-08/Kubernetes/실습.md#section-6) | Pod 자가 복구·직접 접속 성공·Gateway 리소스·연결 거부 |
 | Kiali·Reviews 가중치 라우팅 | [10/8 Kiali](../2026-10-08/Kubernetes/실습.md#section-7) | 트래픽 그래프 확인·7:70:23 설정 미리보기·적용 미확인 |
 | Grafana·Prometheus·Exporter | [10/8 모니터링](../2026-10-08/Kubernetes/실습.md#section-8) · [점검표](../2026-10-08/Kubernetes/실습.md#section-9) | Dashboard 1860·Node Exporter·kube-state-metrics·수집 검증 |
+| kube-proxy·MetalLB·LoadBalancer | [10/12 프록시 확인](../2026-10-12/실습.md#section-2) · [MetalLB](../2026-10-12/실습.md#section-3) | iptables 로그·IP 풀·L2Advertisement·ens160 |
+| Istio IngressGateway 외부 접속 | [10/12 Bookinfo](../2026-10-12/실습.md#section-4) · [Worker kubectl 오류](../2026-10-12/실습.md#section-5) | EXTERNAL-IP .200·브라우저 접속 성공·kubeconfig 점검 |
+| Prometheus·Grafana·모니터링 및 알림 | [10/12 NodePort 접속](../2026-10-12/실습.md#section-6) · [대시보드·PromQL](../2026-10-12/실습.md#section-7) | 웹 UI 접근·up 조회·HPA Import와 Slack 알림은 미완료 |
 
 ## 재사용 YAML
 
@@ -48,6 +51,8 @@
 예제는 기존 위치의 파일을 연결한다. 실제 적용 전 현재 리소스·이미지·네임스페이스와 문서의 전제 조건을 확인한다.
 
 ## 오류와 확인 범위
+
+- 10/12에는 MetalLB IP를 통한 Istio Bookinfo 접속을 확인했다. IPVS 전환·DHCP 풀 충돌 여부·HPA 대시보드 Import·Slack 알림 발송은 미확인이다.
 
 - 10/8의 Bookinfo 접속 성공은 productpage NodePort 기준이다. Gateway 경유 접속·가중치 적용·신규 Exporter 수집은 별도 검증 대상이며, Calico 경고와 Loki Pending도 해결 완료로 기록하지 않는다.
 
